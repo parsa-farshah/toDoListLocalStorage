@@ -42,6 +42,7 @@ function createElementsTask(val) {
               </div>
               <div class="flex">
                 <image
+                onclick="trashBtn(this)"
                   class="w-[30px] h-[30px]"
                   src="src/images/trash.png"
                   alt="delete"
@@ -85,7 +86,7 @@ function makeCompleteDiv(s) {
               class="w-full flex justify-between items-center bg-gray-100 borderLinksComp border-2 border-[#3cff00e3] p-3 rounded-lg opacity-60"
             >
               <div class="flex gap-3 items-center">
-                <h5 class="font-bold text-[#3cff00e3]">${s}</h5>
+                <h5 class="txt font-bold text-[#3cff00e3] ">${s}</h5>
                 <image
                   onclick="completeTick(this)"
                   class="w-[30px] h-[30px] cursor-pointer"
@@ -95,6 +96,7 @@ function makeCompleteDiv(s) {
               </div>
               <div class="flex">
                 <image
+                onclick="trashBtn(this)"
                   class="w-[30px] h-[30px]"
                   src="src/images/trash.png"
                   alt="delete"
@@ -108,3 +110,13 @@ function makeCompleteDiv(s) {
 arrDataBaseComp.map((val) => {
   makeCompleteDiv(val);
 });
+
+function trashBtn(s) {
+  let trashDiv = s.closest(".taskItem");
+  trashDiv.classList.add("hidden");
+  let trashTxt = trashDiv.querySelector(".txt");
+  arrDataBaseComp = arrDataBaseComp.filter(
+    (val) => val.trim() !== trashTxt.textContent.trim()
+  );
+  localStorage.setItem("complete", JSON.stringify(arrDataBaseComp));
+}

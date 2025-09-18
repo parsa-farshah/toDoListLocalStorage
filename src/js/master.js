@@ -66,7 +66,7 @@ function completeTick(val) {
   arrDataBaseComp.push(txtComplete);
   localStorage.setItem("complete", JSON.stringify(arrDataBaseComp));
   // delete repeating tasks from localstorage beacuse complete
-  let index = arrDataBase.startsWith(txtComplete);
+  let index = arrDataBase.indexOf(txtComplete);
   if (index !== -1) {
     arrDataBase.splice(index, 1);
   }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style/output.css" />
+  </head>
+  <body>
+    <div class="w-full h-[100vh] flex justify-center items-center">
+      <div
+        class="w-[95%] h-[95%] border-4 border-black rounded-4xl shadow-2xl shadow-blue-800 borderFav flex flex-wrap overflow-hidden"
+      >
+        <!--- haeder ---->
+        <div class="flex justify-between px-5 py-4 w-full">
+          <h6 class="text-3xl uppercase font-black">parTask</h6>
+          <div class="flex gap-3 items-center">
+            <a
+              class="px-4 py-2 bg-black text-white rounded-xl borderFav borderLinks capitalize font-bold"
+              href="#"
+            >
+              create account
+            </a>
+            <a
+              class="px-6 py-2 bg-white text-black rounded-xl borderFav borderLinks capitalize border-2 font-bold"
+              href="#"
+            >
+              setting
+            </a>
+          </div>
+        </div>
+        <!--- header end ---->
+        <!--- panel pages ---->
+        <div
+          class="w-[23%] h-fit border-b-4 border-r-4 border-t-4 py-4 px-3 pb-[263px]"
+        >
+          <ul class="w-full flex flex-wrap justify-center items-center gap-3">
+            <li class="w-[90%] text-black text-lg capitalize font-bold">
+              <a
+                class="bg-black text-white w-full pl-2 py-2 h-full flex duration-300 rounded-lg"
+                href=""
+              >
+                Tasks
+              </a>
+            </li>
+            <li class="w-[90%] text-black text-lg capitalize font-bold">
+              <a
+                class="hover:bg-gray-200 w-full pl-2 py-2 h-full flex duration-300 rounded-lg"
+                href=""
+              >
+                Completed
+              </a>
+            </li>
+            <li class="w-[90%] text-black text-lg capitalize font-bold">
+              <a
+                class="hover:bg-gray-200 w-full pl-2 py-2 h-full flex duration-300 rounded-lg"
+                href=""
+              >
+                Trash
+              </a>
+            </li>
+            <li class="w-[90%] text-black text-lg capitalize font-bold">
+              <a
+                class="hover:bg-gray-200 w-full pl-2 py-2 h-full flex duration-300 rounded-lg"
+                href=""
+              >
+                my social
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--- panel pages end ---->
+        <!--- tasks panel ---->
+        <div
+          id="taskPanel"
+          class="w-[77%] h-full border-t-4 border-b-4 px-6 flex flex-wrap overflow-scroll content-start"
+        >
+          <h5 class="w-full text-3xl uppercase font-black text-black pt-4">
+            Create Task
+          </h5>
+          <div class="w-full py-2 relative mt-5">
+            <input
+              id="input"
+              class="w-full py-2.5 px-6 borderLinks outline-0 border-2 rounded-lg font-bold"
+              type="text"
+              placeholder="Enter Task"
+            />
+            <button
+              onClick=""
+              id="inpBtn"
+              class="absolute right-0 top-1/2 -translate-1/2 bg-black text-white px-3 py-0.5 rounded-lg cursor-pointer text-md font-semibold borderLinks border-2 border-black hover:bg-white hover:duration-300 hover:text-black"
+            >
+              Add Task
+            </button>
+          </div>
+          <!-- tasks make  -->
+          <div
+            id="tasksParent"
+            class="w-full h-fit mt-6 flex flex-col gap-6"
+          ></div>
+          <!-- complete section -->
+          <div id="completeSection" class="w-full h-fit mt-6  flex-wrap gap-4 mb-20 hidden">
+            <h6
+              id="txtComplete"
+              class="font-bold text-black text-3xl w-full h-fit hidden"
+            >
+              Complete
+            </h6>
+            <div id="completeParent" class="mt-8 w-full h-full flex content-start flex-wrap gap-6 "></div>
+          </div>
+        </div>
+        <!-- tasks panel end  -->
+      </div>
+    </div>
+  </body>
+  <script src="src/js/master.js"></script>
+</html>

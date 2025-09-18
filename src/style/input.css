@@ -1,0 +1,13 @@
+@import "tailwindcss";
+/* npx @tailwindcss/cli -i ./src/style/input.css -o ./src/style/output.css --watch */
+@layer utilities {
+  .borderFav {
+    box-shadow: 5px 10px 0px black;
+  }
+  .borderLinks {
+    box-shadow: 4px 4px 0px black;
+  }
+  .borderLinksComp {
+    box-shadow: 4px 4px 0px #3cff00e3;
+  }
+}

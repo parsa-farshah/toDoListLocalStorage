@@ -16,13 +16,13 @@
           <h6 class="text-[12px] md:text-3xl uppercase font-black">parTask</h6>
           <div class="flex gap-3 items-center">
             <a
-              class="px-4 py-2 bg-black text-[12px] sm:text-2xl text-white rounded-xl borderFav borderLinks capitalize font-bold"
+              class="px-4 py-2 bg-black text-[12px] sm:text-2xl text-white hover:bg-white hover:text-black border-2 border-black duration-500 hover:duration-300 rounded-xl borderFav borderLinks capitalize font-bold"
               href="#"
             >
               create account
             </a>
             <a
-              class="px-6 py-2 bg-white text-black text-[12px] sm:text-2xl rounded-xl borderFav borderLinks capitalize border-2 font-bold"
+              class="px-6 py-2 bg-white text-black hover:bg-black hover:text-white hover:duration-300 text-[12px] sm:text-2xl rounded-xl borderFav borderLinks capitalize border-2 border-black font-bold"
               href="#"
             >
               setting
@@ -99,14 +99,20 @@
             class="w-full h-fit mt-6 flex flex-col gap-6"
           ></div>
           <!-- complete section -->
-          <div id="completeSection" class="w-full h-fit mt-6  flex-wrap gap-4 mb-20 hidden">
+          <div
+            id="completeSection"
+            class="w-full h-fit mt-6 flex-wrap gap-4 mb-20 hidden"
+          >
             <h6
               id="txtComplete"
               class="font-bold text-black text-3xl w-full h-fit hidden"
             >
               Complete
             </h6>
-            <div id="completeParent" class="mt-8 w-full h-full flex content-start flex-wrap gap-6 "></div>
+            <div
+              id="completeParent"
+              class="mt-8 w-full h-full flex content-start flex-wrap gap-6"
+            ></div>
           </div>
         </div>
         <!-- tasks panel end  -->

@@ -32,7 +32,7 @@ function createElementsTask(val) {
               class="w-full flex justify-between items-center bg-gray-100 borderFav border-2 p-3 rounded-lg"
             >
               <div class="flex gap-3 items-center">
-                <h5 class="font-bold">${val}</h5>
+                <h5 class="txtAll font-bold">${val}</h5>
                 <image
                   onclick="completeTick(this)"
                   class="w-[30px] h-[30px] cursor-pointer"
@@ -42,7 +42,7 @@ function createElementsTask(val) {
               </div>
               <div class="flex">
                 <image
-                onclick="trashBtn(this)"
+                onclick="trashBtnTasks(this)"
                   class="w-[30px] h-[30px]"
                   src="src/images/trash.png"
                   alt="delete"
@@ -110,6 +110,16 @@ function makeCompleteDiv(s) {
 arrDataBaseComp.map((val) => {
   makeCompleteDiv(val);
 });
+
+function trashBtnTasks(s) {
+  let trashDiv = s.closest(".taskItem");
+  trashDiv.classList.add("hidden");
+  let trashTxt = trashDiv.querySelector(".txtAll");
+  arrDataBase = arrDataBase.filter(
+    (val) => val.trim() !== trashTxt.textContent.trim()
+  );
+  localStorage.setItem("names", JSON.stringify(arrDataBase));
+}
 
 function trashBtn(s) {
   let trashDiv = s.closest(".taskItem");

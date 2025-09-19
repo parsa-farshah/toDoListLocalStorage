@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
-    <link rel="shortcut icon" href="src/images/favIcon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="src/images/favIcon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="src/style/output.css" />
   </head>
   <body>
@@ -14,7 +18,7 @@
       >
         <!--- haeder ---->
         <div class="flex justify-between items-center px-5 py-4 w-full">
-          <h6 class="text-[12px] md:text-3xl uppercase font-black">parTask</h6>
+          <h6 class="text-[12px] md:text-3xl uppercase font-black">Fresh Tasks</h6>
           <div class="flex gap-3 items-center">
             <a
               class="px-4 py-2 bg-black text-[12px] sm:text-2xl text-white hover:bg-white hover:text-black border-2 border-black duration-500 hover:duration-300 rounded-xl borderFav borderLinks capitalize font-bold"
@@ -47,39 +51,23 @@
             <li class="w-[90%] text-black text-lg capitalize font-bold">
               <a
                 class="hover:bg-gray-200 text-[10px] sm:text-xl w-full pl-2 py-2 h-full flex duration-300 rounded-lg"
-                href="#"
-              >
-                Completed
-              </a>
-            </li>
-            <li class="w-[90%] text-black text-lg capitalize font-bold">
-              <a
-                class="hover:bg-gray-200 text-[10px] sm:text-xl w-full pl-2 py-2 h-full flex duration-300 rounded-lg"
-                href="#"
-              >
-                Trash
-              </a>
-            </li>
-            <li class="w-[90%] text-black text-lg capitalize font-bold">
-              <a
-                class="hover:bg-gray-200 text-[10px] sm:text-xl w-full pl-2 py-2 h-full flex duration-300 rounded-lg"
-                href="#"
+                href="src/pages/social.html"
               >
                 my social
               </a>
             </li>
           </ul>
         </div>
-        <!--- panel pages end ---->
-        <!--- tasks panel ---->
+        <!--------------------------------- panel pages end --------------->
+        <!--------------------------------- tasks panel --------------------->
         <div
           id="taskPanel"
-          class="w-[77%] h-full border-t-4 border-b-4 px-6 flex flex-wrap overflow-scroll content-start"
+          class="w-[77%] h-full border-t-4 border-b-4 flex flex-wrap overflow-scroll content-start relative"
         >
-          <h5 class="w-full text-3xl uppercase font-black text-black pt-4">
+          <h5 class="w-full px-6 text-3xl uppercase font-black text-black pt-4">
             Create Task
           </h5>
-          <div class="w-full py-2 relative mt-5">
+          <div class="w-full py-2 px-6 relative mt-5">
             <input
               id="input"
               class="w-full py-2.5 px-1 sm:px-6 borderLinks outline-0 border-2 rounded-lg font-bold"
@@ -97,12 +85,12 @@
           <!-- tasks make  -->
           <div
             id="tasksParent"
-            class="w-full h-fit mt-6 flex flex-col gap-6"
+            class="w-full h-fit mt-6 flex flex-col gap-6 px-6"
           ></div>
           <!-- complete section -->
           <div
             id="completeSection"
-            class="w-full h-fit mt-6 flex-wrap gap-4 mb-20 hidden"
+            class="w-full h-fit mt-6 flex-wrap gap-4 mb-20 hidden px-6"
           >
             <h6
               id="txtComplete"
@@ -116,7 +104,7 @@
             ></div>
           </div>
         </div>
-        <!-- tasks panel end  -->
+        <!------------------------------- tasks panel end  ------------------------>
       </div>
     </div>
   </body>

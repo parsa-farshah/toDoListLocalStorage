@@ -12,12 +12,16 @@ arrDataBase.map((val) => {
   createElementsTask(val);
 });
 _btnInput.addEventListener("click", () => {
-  let inpValue = _input.value;
-  arrDataBase.push(inpValue);
-  localStorage.setItem("names", JSON.stringify(arrDataBase));
-  createElementsTask(inpValue);
-  _input.value = "";
-  _input.focus();
+  if (_input.value === "") {
+    alert("empty");
+  } else {
+    let inpValue = _input.value;
+    arrDataBase.push(inpValue);
+    localStorage.setItem("names", JSON.stringify(arrDataBase));
+    createElementsTask(inpValue);
+    _input.value = "";
+    _input.focus();
+  }
 });
 
 // function appendTaskPanel(s) {

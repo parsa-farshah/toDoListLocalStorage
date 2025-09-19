@@ -50,10 +50,10 @@ This project helped me deeply understand how **Local Storage** works and how to 
 <img src="src/images/cover.jpg" alt="Fresh Tasks Overview" width="100%">
 
 ### 💻 Desktop View
-<img src="assets/screenshots/desktop.png" alt="Desktop View" width="100%">
+<img src="src/images/1.jpg" alt="Desktop View" width="100%">
 
 ### 📱 Tablet View
-<img src="assets/screenshots/tablet.png" alt="Tablet View" width="60%">
+<img src="src/images/2.jpg" alt="Tablet View" width="60%">
 
 ### 📱 Mobile View
-<img src="assets/screenshots/mobile.png" alt="Mobile View" width="45%">
+<img src="src/images/3.jpg" alt="Mobile View" width="45%">

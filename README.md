@@ -47,7 +47,7 @@ This project helped me deeply understand how **Local Storage** works and how to 
 ## 📸 Project Screenshots
 
 ### 🌟 Overview
-<img src="assets/screenshots/cover.png" alt="Fresh Tasks Overview" width="100%">
+<img src="src/images/cover.jpg" alt="Fresh Tasks Overview" width="100%">
 
 ### 💻 Desktop View
 <img src="assets/screenshots/desktop.png" alt="Desktop View" width="100%">

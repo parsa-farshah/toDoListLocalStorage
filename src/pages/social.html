@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      rel="shortcut icon"
+      href="../images/favIcon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../style/output.css" />
+  </head>
+  <body>
+    <div class="w-full h-[100vh] flex justify-center items-center">
+      <div
+        class="w-[95%] h-[95%] border-4 border-black rounded-4xl shadow-2xl shadow-blue-800 borderFav flex flex-wrap overflow-hidden"
+      >
+        <!--- haeder ---->
+        <div class="flex justify-between items-center px-5 py-4 w-full">
+          <h6 class="text-[12px] md:text-3xl uppercase font-black">parTask</h6>
+          <div class="flex gap-3 items-center">
+            <a
+              class="px-4 py-2 bg-black text-white text-[12px] sm:text-2xl hover:bg-white hover:text-black border-2 border-black duration-500 hover:duration-300 rounded-xl borderFav borderLinks capitalize font-bold"
+              href="#"
+            >
+              create account
+            </a>
+            <a
+              class="px-6 py-2 bg-white text-black hover:bg-black hover:text-white hover:duration-300 text-[12px] sm:text-2xl rounded-xl borderFav borderLinks capitalize border-2 border-black font-bold"
+              href="#"
+            >
+              setting
+            </a>
+          </div>
+        </div>
+        <!--- header end ---->
+        <!--- panel pages ---->
+        <div
+          class="w-[23%] h-full border-b-4 border-r-4 border-t-4 py-4 px-3 pb-[263px]"
+        >
+          <ul class="w-full flex flex-wrap justify-center items-center gap-3">
+            <li class="w-[90%] text-black text-lg capitalize font-bold">
+              <a
+                class="text-[10px] hover:bg-gray-200 sm:text-xl w-full pl-2 py-2 h-full flex duration-300 rounded-lg"
+                href="../../index.html"
+              >
+                Tasks
+              </a>
+            </li>
+            <li class="w-[90%] text-black text-lg capitalize font-bold">
+              <a
+                class="text-[10px] bg-black text-white sm:text-xl w-full pl-2 py-2 h-full flex duration-300 rounded-lg"
+                href="#"
+              >
+                my social
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--------------------------------- panel pages end --------------->
+        <!--------------------------------- tasks panel --------------------->
+        <div
+          class="w-[77%] h-full border-t-4 border-b-4 flex flex-wrap overflow-scroll content-start relative px-5 pb-20"
+        >
+          <h3 class="font-bold text-3xl">My Social Links</h3>
+          <div
+            class="w-full flex gap-3 flex-wrap mt-4 justify-center md:justify-between"
+          >
+            <!-- card instagram -->
+            <div
+              class="w-[70%] md:w-[31%] h-[200px] border-4 borderLinks rounded-3xl overflow-hidden"
+            >
+              <!-- section Pink -->
+              <div class="w-full h-[60%] bg-[#c550d0]">
+                <div class="w-full px-2 pt-4 flex items-center justify-between">
+                  <img
+                    class="w-[30px] h-[30px]"
+                    src="../images/instagram.png"
+                    alt=""
+                  />
+                  <a
+                    class="bg-[#ffffff69] px-2 py-1 rounded-2xl text-white text-sm"
+                    href=""
+                    >Connected</a
+                  >
+                </div>
+                <div class="w-full px-2 pt-2">
+                  <h5 class="text-white text-xl font-black">Instagram</h5>
+                  <h6 class="text-[#ffffffc5] text-[11px] font-semibold">
+                    @parsa_dehghanpour_dv
+                  </h6>
+                </div>
+              </div>
+              <!-- end section pink -->
+              <div class="w-full h-[40%] px-3 py-3 flex justify-between">
+                <div class="w-[30%]">
+                  <h4 class="font-black">32</h4>
+                  <h3 class="text-[#303030c7] capitalize text-[12px]">posts</h3>
+                </div>
+                <div class="w-[30%]">
+                  <h4 class="font-black">139</h4>
+                  <h3 class="text-[#303030c7] capitalize text-[12px]">
+                    Followers
+                  </h3>
+                </div>
+                <div class="w-[30%]">
+                  <h4 class="font-black">155</h4>
+                  <h3 class="text-[#303030c7] capitalize text-[12px]">
+                    following
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- card instagram end -->
+            <!-- card github -->
+            <div
+              class="w-[70%] md:w-[31%] h-[200px] border-4 borderLinks rounded-3xl overflow-hidden"
+            >
+              <!-- section black -->
+              <div class="w-full h-[60%] bg-[#060107]">
+                <div class="w-full px-2 pt-4 flex items-center justify-between">
+                  <img
+                    class="w-[30px] h-[30px]"
+                    src="../images/github.png"
+                    alt=""
+                  />
+                  <a
+                    class="bg-[#31313169] px-2 py-1 rounded-2xl text-white text-sm"
+                    href=""
+                    >Connected</a
+                  >
+                </div>
+                <div class="w-full px-2 pt-2">
+                  <h5 class="text-white text-xl font-black">Github</h5>
+                  <h6 class="text-[#ffffffc5] text-[11px] font-semibold">
+                    @parsa_farshah
+                  </h6>
+                </div>
+              </div>
+              <!-- end section black -->
+              <div class="w-full h-[40%] px-3 py-3 flex justify-between">
+                <div class="w-[30%]">
+                  <h4 class="font-black">32</h4>
+                  <h3 class="text-[#303030c7] capitalize text-[11px] mt-0.5">
+                    repositoeies
+                  </h3>
+                </div>
+                <div class="w-[30%]">
+                  <h4 class="font-black">34</h4>
+                  <h3 class="text-[#303030c7] capitalize text-[12px]">
+                    Followers
+                  </h3>
+                </div>
+                <div class="w-[30%]">
+                  <h4 class="font-black">49</h4>
+                  <h3 class="text-[#303030c7] capitalize text-[12px]">
+                    following
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- card github end -->
+            <!-- card linkedin -->
+            <div
+              class="w-[70%] md:w-[31%] h-[200px] border-4 borderLinks rounded-3xl overflow-hidden"
+            >
+              <!-- section blue -->
+              <div class="w-full h-[60%] bg-[#2563eb]">
+                <div class="w-full px-2 pt-4 flex items-center justify-between">
+                  <img
+                    class="w-[30px] h-[30px]"
+                    src="../images/linkedin.png"
+                    alt=""
+                  />
+                  <a
+                    class="bg-[#31313169] px-2 py-1 rounded-2xl text-white text-sm"
+                    href=""
+                    >Connected</a
+                  >
+                </div>
+                <div class="w-full px-2 pt-2">
+                  <h5 class="text-white text-xl font-black">Linkedin</h5>
+                  <h6 class="text-[#ffffffc5] text-[11px] font-semibold">
+                    @parsa_dehghan_pour_farashah
+                  </h6>
+                </div>
+              </div>
+              <!-- end section blue -->
+              <div class="w-full h-[40%] px-3 py-3 flex justify-between">
+                <div class="w-[30%]">
+                  <h4 class="font-black">40</h4>
+                  <h3 class="text-[#303030c7] capitalize text-[11px] mt-0.5">
+                    posts
+                  </h3>
+                </div>
+                <div class="w-[30%]">
+                  <h4 class="font-black">1,106</h4>
+                  <h3 class="text-[#303030c7] capitalize text-[12px]">
+                    Followers
+                  </h3>
+                </div>
+                <div class="w-[30%]">
+                  <h4 class="font-black">1,106</h4>
+                  <h3 class="text-[#303030c7] capitalize text-[12px]">
+                    following
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- card linkedin end -->
+          </div>
+          <div class="w-[70%] md:w-[41%] h-[300px] md:h-[350px] border-4 borderLinks rounded-4xl mx-auto mt-7 overflow-hidden">
+            <img class="object-cover w-full object-top h-[200px] md:h-[250px]" src="../images/black and white.jpg" alt="">
+            <h3 class="font-black text-center mt-4 text-[12px] md:text-[16px]">Parsa Dehghan Pour Farashah</h3>
+            <h2 class="font-black text-center mt-0.5 text-sm md:text-[16px]">Front End Developer</h2>
+          </div>
+        </div>
+        <!------------------------------- tasks panel end  ------------------------>
+      </div>
+    </div>
+  </body>
+  <script src="src/js/master.js"></script>
+</html>

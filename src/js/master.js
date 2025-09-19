@@ -74,6 +74,8 @@ function completeTick(val) {
   localStorage.setItem("names", JSON.stringify(arrDataBase));
 }
 
+// complete Page
+let completePage = document.querySelector("#completePage");
 function makeCompleteDiv(s) {
   completeSection.classList.remove("hidden");
   completeSection.classList.add("flex");
@@ -104,6 +106,7 @@ function makeCompleteDiv(s) {
               </div>
             </div>
           </div>`;
+
   completeParent.appendChild(completeDiv);
 }
 

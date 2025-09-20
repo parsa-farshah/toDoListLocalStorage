@@ -11,9 +11,16 @@ let arrDataBase = JSON.parse(localStorage.getItem("names")) || [];
 arrDataBase.map((val) => {
   createElementsTask(val);
 });
+
+let _alert = document.querySelector("#alert");
 _btnInput.addEventListener("click", () => {
   if (_input.value === "") {
-    alert("empty");
+    _alert.classList.remove("hidden");
+    _alert.classList.add("flex");
+    setTimeout(() => {
+      _alert.classList.add("hidden");
+      _alert.classList.remove("flex");
+    }, 2000);
   } else {
     let inpValue = _input.value;
     arrDataBase.push(inpValue);

@@ -12,13 +12,27 @@
     <link rel="stylesheet" href="src/style/output.css" />
   </head>
   <body>
+    <!-- alert input is empty -->
+    <div id="alert"
+      class="absolute bg-black/90 w-full h-full z-50  justify-center items-center hidden"
+    >
+      <div
+        class="w-[300px] h-[300px] bg-white borderFav rounded-4xl flex flex-col items-center justify-center"
+      >
+        <img class="w-[40px] h-[40px]" src="src/images/alert.png" alt="" />
+        <h2 class="capitalize text-2xl font-bold">your input is empty</h2>
+      </div>
+    </div>
+    <!-- main -->
     <div class="w-full h-[100vh] flex justify-center items-center">
       <div
         class="w-[95%] h-[95%] border-4 border-black rounded-4xl shadow-2xl shadow-blue-800 borderFav flex flex-wrap overflow-hidden"
       >
         <!--- haeder ---->
         <div class="flex justify-between items-center px-5 py-4 w-full">
-          <h6 class="text-[12px] md:text-3xl uppercase font-black">Fresh Tasks</h6>
+          <h6 class="text-[12px] md:text-3xl uppercase font-black">
+            Fresh Tasks
+          </h6>
           <div class="flex gap-3 items-center">
             <a
               class="px-4 py-2 bg-black text-[12px] sm:text-2xl text-white hover:bg-white hover:text-black border-2 border-black duration-500 hover:duration-300 rounded-xl borderFav borderLinks capitalize font-bold"

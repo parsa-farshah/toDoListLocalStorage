@@ -7,8 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-300: oklch(87.9% 0.169 91.605);
-    --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
@@ -198,14 +196,11 @@
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
-  .right-4 {
-    right: calc(var(--spacing) * 4);
-  }
-  .right-6 {
-    right: calc(var(--spacing) * 6);
-  }
   .right-10 {
     right: calc(var(--spacing) * 10);
+  }
+  .z-50 {
+    z-index: 50;
   }
   .mx-auto {
     margin-inline: auto;
@@ -218,15 +213,6 @@
   }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
-  }
-  .mt-1\.5 {
-    margin-top: calc(var(--spacing) * 1.5);
-  }
-  .mt-2 {
-    margin-top: calc(var(--spacing) * 2);
-  }
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
@@ -264,6 +250,9 @@
   .h-\[40\%\] {
     height: 40%;
   }
+  .h-\[40px\] {
+    height: 40px;
+  }
   .h-\[60\%\] {
     height: 60%;
   }
@@ -294,6 +283,12 @@
   .w-\[30px\] {
     width: 30px;
   }
+  .w-\[40\] {
+    width: 40;
+  }
+  .w-\[40px\] {
+    width: 40px;
+  }
   .w-\[70\%\] {
     width: 70%;
   }
@@ -305,6 +300,12 @@
   }
   .w-\[95\%\] {
     width: 95%;
+  }
+  .w-\[300\] {
+    width: 300;
+  }
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-full {
     width: 100%;
@@ -425,6 +426,12 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-black\/90 {
+    background-color: color-mix(in srgb, #000 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 90%, transparent);
+    }
+  }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
@@ -497,6 +504,10 @@
   .text-center {
     text-align: center;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -516,9 +527,6 @@
   .text-\[7px\] {
     font-size: 7px;
   }
-  .text-\[8px\] {
-    font-size: 8px;
-  }
   .text-\[9px\] {
     font-size: 9px;
   }
@@ -530,9 +538,6 @@
   }
   .text-\[12px\] {
     font-size: 12px;
-  }
-  .text-\[16px\] {
-    font-size: 16px;
   }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
@@ -679,19 +684,9 @@
       height: 400px;
     }
   }
-  .md\:w-\[30\%\] {
-    @media (width >= 48rem) {
-      width: 30%;
-    }
-  }
   .md\:w-\[31\%\] {
     @media (width >= 48rem) {
       width: 31%;
-    }
-  }
-  .md\:w-\[32\%\] {
-    @media (width >= 48rem) {
-      width: 32%;
     }
   }
   .md\:w-\[41\%\] {
